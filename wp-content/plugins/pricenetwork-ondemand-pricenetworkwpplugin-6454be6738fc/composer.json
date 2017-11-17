@@ -1,0 +1,25 @@
+{
+    "name": "pricenetwork-ondemand/pricenetworkwpplugin",
+    "description": "Wordpress Plugin from PriceNetwork",
+    "keywords": ["pricenetwork", "books", "search", "wordpress"],
+    "homepage": "https://www.campusbooks.com",
+    "type": "wordpress-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "PriceNetwork",
+            "email": "info@campusbooks.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "composer/installers": "~1.0.12"
+    },
+    "extra": {
+        "installer-paths": {
+            "plugins/{$name}": [
+                "type:wordpress-plugin"
+            ]
+        }
+    }
+}
