@@ -58,7 +58,7 @@ class PNAPISearch
         <input style="width: 100%;" type="text" name="pnqs" id="pnqs" value="" placeholder="{$placeholder}" />
     </td>
     <td align="left">
-        <input type="submit" value="$button" />
+        <button class="search_book_btn" onclick="search_book()" type="button" >$button</button>
     </td>
 </tr>
 </table>
@@ -311,6 +311,7 @@ OFFERS;
 OFFERS;
                 }
                 $content .= '</table>';
+                
             }
 
             return $content;
@@ -522,6 +523,9 @@ RROW;
             }
 
             $content .= '</div>';
+            $content .= '<div class="ad4">
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=48&l=ur1&category=books&banner=1E12T8MN3QGRR49EP802&f=ifr&linkID=94b274d19288143386fe23ffc74bb841&t=ergode1313-20&tracking_id=ergode1313-20" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</div>';
         }
         else
         {
